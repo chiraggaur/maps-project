@@ -1,0 +1,104 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.flex{
+  display: flex;
+}
+
+#map{
+  width: 80%;
+  height: 100vh;
+}
+
+aside{
+  width: 20%;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.heading{
+  text-align: center;
+}
+
+.hotel-info-container{
+  max-width: 1200px;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.hotels-menu{
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+.hotels-menu-item{
+  border: 1px solid white;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+}
+
+.hero-image{
+  width: 100vw;
+  height: 50vh;
+  object-fit:fill;
+}
+
+.hero{
+  position: relative;
+}
+
+.hero-heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 0 0 0.5rem black;
+  transform: translateX(-50%) translateY(-50%);
+  text-decoration: underline;
+}
+
+.hotel-info-wrapper{
+  justify-content: space-between;
+}
+
+.hotel-info-wrapper section{
+  flex: 0 1 48%;
+  text-align: center;
+}
+
+#image-grid{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2.5rem;
+}
+
+.hotel-image{
+  display: block;
+  width: 48%;
+  height: 400px;
+}
+
